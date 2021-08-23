@@ -4,30 +4,30 @@
             <div class="row">
               <h1>{{ prediction }}</h1>
             </div>
-                <h1>Masukkan Paper</h1>
-                <form action="{{ url_for('paper.predict_paper') }}" method="post">
+                <h1>Paper Bahasa Inggris</h1>
+                <form action="#" method="post">
                     <div class="row my-3">
                         <div class="form-group col-md-12">
                             <label for="inputEmail4">Judul Paper</label>
-                            <input name="title" type="text" class="form-control" placeholder="Masukkan Judul Paper" required>
+                            <input name="title_paper" type="text" class="form-control" placeholder="Masukkan Judul Paper" required>
                         </div>
                     </div>
                     <div class="row my-3">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Abstract Paper</label>
-                            <textarea name="abstract" class="form-control" rows="3"></textarea>
+                            <textarea name="abstract_paper" class="form-control" rows="3"></textarea>
                           </div>
                     </div>
                     <div class="row my-3">
                         <div class="form-group col-md-12">
                             <label>Pilih Bahasa</label>
-                            <select class="form-control" name="language">
-                                <option value="2">Bahasa Indonesia</option>
-                                <option value="1">Bahasa Inggris</option>
+                            <select class="form-control" name="bahasa">
+                                <option value="indonesia">Bahasa Indonesia</option>
+                                <option value="inggris">Bahasa Inggris</option>
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="btn" style="background-color:#27c499; color:white;">Prediksi Tema Paper</button>
+                    <button type="submit" class="btn btn-primary">Prediksi Tema Paper</button>
                 </form>
           </div>
       </section>
